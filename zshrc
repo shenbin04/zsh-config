@@ -107,8 +107,6 @@ export FZF_DEFAULT_OPTS="--history=$HOME/.fzf_history"
 export ANDROID_HOME=$HOME/Library/Android/sdk/
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
 export PYENV_ROOT=$HOME/.pyenv
-export LDFLAGS="-L/usr/local/opt/openssl/lib -L/usr/local/opt/icu4c/lib"
-export CPPFLAGS="-I/usr/local/opt/openssl/include -I/usr/local/opt/icu4c/include"
 
 # Alias
 alias v=vim
