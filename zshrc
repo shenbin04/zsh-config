@@ -16,6 +16,8 @@ antigen theme gento
 
 antigen apply
 
+source $HOME/.antigen/bundles/robbyrussell/oh-my-zsh/lib/history.zsh
+
 # Function
 include () {
   [[ -f "$1" ]] && source "$1"
