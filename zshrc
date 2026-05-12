@@ -87,6 +87,11 @@ alias tls='tmux ls'
 alias ts='tmuxinator start'
 alias te='tmuxinator edit'
 
+alias gwa='git worktree add'
+alias gwl='git worktree list'
+alias gwr='git worktree remove'
+alias gwp='git worktree prune'
+
 alias gb='git --no-pager branch'
 alias gs='git show'
 alias gshow='git show'
