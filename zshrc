@@ -4,7 +4,6 @@ source $HOME/.zsh/antigen.zsh
 antigen use oh-my-zsh
 antigen bundle git
 antigen bundle gitfast
-antigen bundle terraform
 antigen bundle tmuxinator
 antigen bundle vi-mode
 
@@ -21,23 +20,6 @@ source $HOME/.antigen/bundles/robbyrussell/oh-my-zsh/lib/history.zsh
 # Function
 include () {
   [[ -f "$1" ]] && source "$1"
-}
-
-lpyenv() {
-  eval "$(pyenv init -)"
-  eval "$(pyenv virtualenv-init -)"
-}
-
-lnvm() {
-  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-}
-
-lrvm() {
-  [ -s "$HOME/.rvm/scripts/rvm" ] && . "$HOME/.rvm/scripts/rvm"
-}
-
-ldocker() {
-  eval "$(docker-machine env)"
 }
 
 # Paste fix
@@ -92,23 +74,10 @@ bindkey ^n history-beginning-search-forward
 bindkey '^[^?' backward-kill-word
 
 # Path
-export PATH=/usr/local/bin:$PATH
-export PATH=$HOME/.rvm/bin:$PATH
-export PATH=$HOME/.fastlane/bin:$PATH
-export PATH=/usr/local/opt/mysql/bin:$PATH
-export PATH=/usr/local/opt/icu4c/bin:$PATH
-export PATH=/usr/local/opt/imagemagick@6/bin:$PATH
-export PATH=$HOME/.pyenv/bin:$PATH
 
 export DISABLE_AUTO_UPDATE=true
 export EDITOR=vim
-export FPATH=$DATA_REPO/engshare/bin:$FPATH
-export NVM_DIR="$HOME/.nvm"
-export WORKON_HOME=$HOME/.virtualenvs
 export FZF_DEFAULT_OPTS="--history=$HOME/.fzf_history"
-export ANDROID_HOME=$HOME/Library/Android/sdk/
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
-export PYENV_ROOT=$HOME/.pyenv
 
 # Alias
 alias v=vim
